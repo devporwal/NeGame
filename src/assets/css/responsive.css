@@ -1,0 +1,214 @@
+
+  @media screen and (min-width:768px) {
+    .paymentbtn::after{
+      font-size:11px !important;
+    }
+    .paymentbtn2::after{
+      font-size: 7px;
+    }
+    .buttonbox5 .flex-container{
+      flex-direction: column;
+    }
+    .buttonbox5 p{
+      word-wrap: break-word;
+    }
+    .buttonbox5 .flex-container > div{
+      width: 100%;
+    }
+    .buttonbox5 > .flex-container > .flexchildclass  {
+      width: 100%;
+    }
+    .buttonbox5 >.flex-container > .flexchildclass1{
+      width: 100%;
+    }
+    .connectdiv .flex-container{
+      flex-direction: row;
+    }
+
+  }
+
+  @media screen and (min-width:1024px) {
+    .paymentbtn::after{
+      font-size:16px !important;
+    }
+    .paymentbtn2::after{
+      font-size:14px ;
+    }
+
+    .buttonbox5 .flex-container{
+      flex-direction: row;
+    }
+    .buttonbox5 .flex-container > div{
+      width: auto;
+    }
+
+  }
+
+ 
+
+  @media screen and (max-width:540px) {
+    .paymentbtn::after{
+      font-size:24px !important;
+      top: 12%;
+    }
+    .paymentbtn2::after{
+      font-size:24px !important;
+    }
+    .easylose::after{
+      top: 203px;
+      left: 199px;
+    }
+
+  }
+  @media screen and (max-width:280px) {
+    .paymentbtn::after{
+      font-size:13px !important;
+      top: 10%;
+    }
+    .paymentbtn2::after{
+      font-size:13px !important;
+    }
+
+  }
+
+
+  @media screen and (min-width: 360px) and (max-width:414px){
+    .paymentbtn::after{
+      top: 1%;
+    }
+  }
+@media screen and (min-width: 768px)and(max-width:820px){
+
+  
+  .keyfirstrow{
+    width: 62% !important;
+  }
+  .keysecondbox{
+    width: 53%  !important;
+  }
+    }
+
+
+@media screen and (min-width: 200px) and (max-width: 850px)  {
+
+  .modaldiv{
+width: 90%;
+  }
+
+ 
+
+  /* #keyword{
+    padding: 10px 10px;
+  } */
+
+  .operator, .number, .empty {
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+   
+}
+
+  /* .keyfirstrow{
+    width: 100%; }
+
+    .keysecondbox{
+      width: 100%; } */
+
+
+      .keythirdbox{
+        width: 100%; }
+
+  .hintbtb {
+    width: 45%;
+    margin-left: 13px;
+}
+
+  .hintbtbmain {
+    width: 100%;
+  display: flex;
+  }
+  
+  /* .esayprofilebox {
+    padding-top: 179px;
+} */
+
+  .esaybox{
+    height: 943px;
+  }
+
+    .formboxs{
+        width:90%;
+    }
+.logintext {
+    background-color: #ffff;
+    padding: 7px;
+    left: 29%;
+    bottom: 36%;}
+
+    .formbox{
+        height: 1136px;
+    }
+
+
+    .textox {
+      margin-top: 8px;
+  }
+.mrtop{
+  margin-bottom: 30px;
+}
+
+
+.operator, .number, .empty {
+  width: 30px;
+  height: 30px;
+  margin: 5px;}
+
+  }
+
+  @media screen and (min-width: 200px) and (max-width: 600px)  { 
+
+    .pos-center p{
+        display: none;
+    }
+
+
+     
+
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1028px)   {
+    .pos-center p {
+        font-size: 38px !important;}
+
+        .formboxs{
+            width:90%;
+        }
+        .textox {
+          margin-top: 8px;
+      }
+
+  }
+
+  @media screen and (min-width: 400px)and(max-width:450px) {
+    .logintext{
+       bottom: 32%;
+    }
+  }
+
+  @media screen and (max-width:600px) {
+    /* .mainroundbtn::after {
+      left: 105px;
+      bottom: 102px;
+  } */
+  
+  .mainwinner::after{
+    top: 195px;
+  }
+
+  }
+
+  @media screen and (min-width:1366px) {
+    .deshbox {
+      padding: 7px 10px;}
+  }
+  
