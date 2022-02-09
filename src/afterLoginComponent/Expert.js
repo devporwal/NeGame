@@ -10,7 +10,7 @@ export default function Expert() {
     const [leftcolor,setleftcolor] = useState("red")
     const [rightcolor,setrightcolor] = useState("#00FF00")
     const[roundcounter,setRoundCounter] = useState(1);
-    const [hintvalue,sethintvalue] = useState("Hint (1)")
+    const [hintvalue,sethintvalue] = useState("Hints: (1)")
       const [classnm,setclassnm]= useState("easylose")
       const [hintword,sethintword] = useState("")
       const [hintstate,sethintstate] = useState(false)
@@ -81,10 +81,10 @@ export default function Expert() {
           
               if (response.status === 200 && response.message === "Success") {
                   window.sessionStorage.setItem("hint_id",response.hint_id);
-                  sethintvalue(`Hint ${response.count}`)
+                  sethintvalue(`Hints: (${response.count})`)
                
               }else{
-                  sethintvalue("No Hint (0)")
+                  sethintvalue("No Hints: (0)")
               }
           })
       
@@ -740,7 +740,7 @@ export default function Expert() {
                   
                       if (response.status === 200 && response.message === "Success") {
                           window.sessionStorage.setItem("hint_id",response.hint_id);
-                          sethintvalue("Hint Used")
+                          sethintvalue("Hints Used")
                       }
                   })
               }
@@ -1030,7 +1030,7 @@ export default function Expert() {
       }
       
       async function hint(){
-          if(hintvalue !== "No Hint (0)"){
+          if(hintvalue !== "No Hints: (0)"){
               if(counter<1){
                   const url3 = "https://ne-games.com/ne_lite/api/userHints?user_id="+window.sessionStorage.getItem("id");
                   const url = "https://ne-games.com/ne_lite/api/level_three?search=" + val.toLowerCase();
@@ -1052,7 +1052,7 @@ export default function Expert() {
                           sethintword(word)
                           setcounter(counter+1)
                           sethintstate(true)
-                          sethintvalue("Hint Used")
+                          sethintvalue("Hints Used")
                       }
                   })
                   await fetch(url3,{
@@ -1066,7 +1066,7 @@ export default function Expert() {
                       }
                   })
               }else{
-                sethintvalue("Hint Used")
+                sethintvalue("Hints Used")
               }
               var value =document.querySelectorAll(".getdata")
         if (counter1 === 0) {
@@ -1246,14 +1246,14 @@ export default function Expert() {
                         <div className="flex-container">
 
 <div className="">
-<button className='hovcolor mt-1 ml-5' data-bs-toggle="modal" data-bs-target="#staticBackdrop" ><p>EXIT</p></button>
+<div className=' mt-1 ml-5' data-bs-toggle="modal" data-bs-target="#staticBackdrop" >    <img src={require('../assets/images/game_eee.png')} className="extbtn" alt="..."/> </div>
 </div>
 <div className="">
     <h2 className='text-center mb-2'>NE <i>Lite</i></h2>
     <h4 className='text-center'>Expert Level</h4>
 </div>
 <div className="">
-<button className='hovcolor' style={{float:' right'}} ><p><i className="fas fa-cog"></i></p></button>
+<div className='' style={{float:' right'}} ><img src={require('../assets/images/newdashsetting.png')} className="extbtn" alt="..."/> </div>
 </div>
 
 
@@ -1293,7 +1293,7 @@ export default function Expert() {
 
 
                 <div className="formboxs2">
-                            <h1  className=" easytextbox mt-2" >  {Array.from(val).map((number, keys) => (
+                            <h1  className=" easytextbox mt-2 " >  {Array.from(val).map((number, keys) => (
             <span className="getdata" key={keys}>{number}</span>
           ))} </h1>
                             </div>

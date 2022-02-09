@@ -7,7 +7,7 @@ export default function Easy() {
     
 //   const history = useHistory();
   const[roundcounter,setRoundCounter] = useState(1);
-  const [hintvalue,sethintvalue] = useState("Hint (1)")
+  const [hintvalue,sethintvalue] = useState("Hints: (1)")
     const [classnm,setclassnm]= useState("easylose")
     const [hintword,sethintword] = useState("")
     const [hintstate,sethintstate] = useState(false)
@@ -62,10 +62,10 @@ export default function Easy() {
         
             if (response.status === 200 && response.message === "Success") {
                 window.sessionStorage.setItem("hint_id",response.hint_id);
-                sethintvalue(`Hint (${response.count})`)
+                sethintvalue(`Hints: (${response.count})`)
              
             }else{
-                sethintvalue(`No Hint (${response.count})`)
+                sethintvalue(`No Hints: (${response.count})`)
             }
         })
     
@@ -471,7 +471,7 @@ export default function Easy() {
                 
                     if (response.status === 200 && response.message === "Success") {
                         window.sessionStorage.setItem("hint_id",response.hint_id);
-                        sethintvalue("Hint Used")
+                        sethintvalue("Hints Used")
                     }
                 })
             }
@@ -729,7 +729,7 @@ export default function Easy() {
     }
     
     async function hint(){
-        if(hintvalue !== "No Hint (0)"){
+        if(hintvalue !== "No Hints: (0)"){
             if(counter<1){
                 const url3 = "https://ne-games.com/ne_lite/api/userHints?user_id="+window.sessionStorage.getItem("id");
                 const url = "https://ne-games.com/ne_lite/api/level_one?search=" + val.toLowerCase();
@@ -766,7 +766,7 @@ export default function Easy() {
                     }
                 })
             }else{
-                sethintvalue("Hint Used")
+                sethintvalue("Hints Used")
             }
         }
         

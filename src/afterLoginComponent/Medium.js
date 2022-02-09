@@ -7,7 +7,7 @@ export default function Medium() {
     const [rightcolor,setrightcolor] = useState("#00FF00")
     const [positionflag,setPositionflag] = useState(1)
     const[roundcounter,setRoundCounter] = useState(1);
-    const [hintvalue,sethintvalue] = useState("Hint (1)")
+    const [hintvalue,sethintvalue] = useState("Hints: (1)")
       const [classnm,setclassnm]= useState("easylose")
       const [hintword,sethintword] = useState("")
       const [hintstate,sethintstate] = useState(false)
@@ -70,10 +70,10 @@ export default function Medium() {
           
               if (response.status === 200 && response.message === "Success") {
                   window.sessionStorage.setItem("hint_id",response.hint_id);
-                  sethintvalue(`Hint (${response.count})`)
+                  sethintvalue(`Hints: (${response.count})`)
                
               }else{
-                  sethintvalue("No Hint (0)")
+                  sethintvalue("No Hints: (0)")
               }
           })
       
@@ -571,7 +571,7 @@ export default function Medium() {
                   
                       if (response.status === 200 && response.message === "Success") {
                           window.sessionStorage.setItem("hint_id",response.hint_id);
-                          sethintvalue(`Hint Used`)
+                          sethintvalue(`Hints Used`)
                       }
                   })
               }
@@ -832,7 +832,7 @@ export default function Medium() {
       }
       
       async function hint(){
-          if(hintvalue !== "No Hint (0)"){
+          if(hintvalue !== "No Hints: (0)"){
               if(counter<1){
                   const url3 = "https://ne-games.com/ne_lite/api/userHints?user_id="+window.sessionStorage.getItem("id");
                   const url = "https://ne-games.com/ne_lite/api/level_two?search=" + val.toLowerCase();
@@ -855,7 +855,7 @@ export default function Medium() {
                             gethintvalue()
                           setcounter(counter+1)
                           sethintstate(true)
-                          sethintvalue("Hint Used")
+                          sethintvalue("Hints Used")
                       }
                   })
                   await fetch(url3,{
@@ -869,7 +869,7 @@ export default function Medium() {
                       }
                   })
               }else{
-                sethintvalue("Hint Used")
+                sethintvalue("Hints Used")
               }
           }
           

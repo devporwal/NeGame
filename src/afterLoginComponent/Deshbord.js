@@ -397,16 +397,9 @@ to be included in the ranking table</h6>
   </li>
 </ul>
 
-<div className='buttonbox5'>
+
 <div className='flex-container'>
-  <div className='flexchildclass'>
-  <p className='text-white text-center'>
-  click here to play 
-NE connect and play with
-friends & family and members of the NE GAMES
-Online Community
-  </p>
-  </div>
+ 
 <div className='flexchildclass1 '>
   
 <div className='connectdiv'>
@@ -416,8 +409,8 @@ Online Community
   <img src={require('../assets/images/image002.png')} className="circalbox7" alt="..."/>
   </div>
   <div className='podiv1'>
-<p className='text-center text-white'>NE Connect</p>
-<p className='text-center text-white'>00:01:25</p>
+<p className='text-center text-white'><h3 style={{fontWeight:700}}>NE <i>Connect</i> </h3></p>
+
 </div>
 <div className='podiv'>
 <img src={require('../assets/images/image004.png')} className="circalbox7" alt="..." style={{float: 'right'}}/>
@@ -425,12 +418,12 @@ Online Community
 
 </div>
 <div className='paymentbtn2'>
-<img src={require('../assets/images/nextplaybutton.png')} className="" alt="..." />
+ <b>Click here to play with friends,family or Player in the online NE GAMES community pool</b>
 </div>
 
 <div className='prap'>
-  <p className='text-center'>
-WITH REAL TIME CHAT</p>
+  <a href ="https://play.google.com/store/apps/details?id=com.negame.negame" target={"_Blank"} style={{textDecoration:"none"}}><p className='text-center'>
+WITH REAL TIME CHAT</p></a>
 </div>
 
 
@@ -442,37 +435,7 @@ WITH REAL TIME CHAT</p>
   </div>
 
 
-  <div className='flex-container'>
-  <div className='flexchildclass'>
-  <img src={require('../assets/images/clickherebutton.png')} className="circalbox6" alt="..."/>
-  </div>
-<div className='flexchildclass8 '>
   
-<div className='flex-container'>
-<div className='profilesdiv'>
-<img src={require('../assets/images/image002.png')} className="circalbox7" alt="..."/>
-</div>
-<div className='profilesdiv1'>
-  <p className='text-white'>I have no idea what word you are making</p>
-</div>
-
-</div>
-<div className='flex-container'>
-<div className='profilesdiv'>
-<img src={require('../assets/images/image004.png')} className="circalbox7" alt="..."/>
-</div>
-<div className='profilesdiv1'>
-  <p className='text-white'>You'll have to challege me then!</p>
-  <p className='textsize text-white'>HYSTERICAL,HISTORIC,RHETORIC,THEATRICAL</p>
-</div>
-
-</div>
-
-
-</div>
-
-
-  </div>
 
 </div>
         
@@ -480,7 +443,6 @@ WITH REAL TIME CHAT</p>
     
         
 </div>
-           </div>
            </div>
            </div>
           
